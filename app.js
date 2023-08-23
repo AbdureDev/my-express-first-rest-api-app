@@ -10,7 +10,7 @@ const courses = [
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
-    console.log('Hello World!!!');
+    console.log('Hello World!');
 });
 
 app.get('/api/courses', (req, res) => {
