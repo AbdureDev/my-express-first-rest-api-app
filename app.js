@@ -19,7 +19,7 @@ app.get('/api/courses', (req, res) => {
     res.send(courses)
 });
 
-app.get('/api/courses/:id', (req, res) => {
+app.get('/api/courstses/:id', (req, res) => {
     // Check if course found
     const course = courses.find(c => c.id === parseInt(req.params.id));
     if (!course) return res.status(404).send('Course not found');
@@ -77,4 +77,4 @@ app.delete('/api/courses/:id', (req, res) => {
 
 // Environment Variable
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listining on port ${3000}....`));
+app.listen(port, () => console.log(`Listining on port ${port}....`));
